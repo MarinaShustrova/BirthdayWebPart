@@ -25,10 +25,10 @@ This package produces the following:
 * deploy/* - all resources which should be uploaded to a CD
 
 ### Варианты сборки 
-gulp clean - очистка проекта (TODO: добавьте описание)
-gulp test - запуск тестов (TODO: добавьте описание)
-gulp serve - запуск локального сервера (TODO: добавьте описание)
-gulp bundle --ship - создание бандла для продакшена (TODO: добавьте описание)
-gulp package-solution --ship - создание пакета решения для разворачивания на сервере SharePoint (TODO: добавьте описание)
+gulp clean - очистка проекта
+gulp test - запуск тестов 
+gulp serve - запуск локального сервера 
+gulp bundle --ship - создание бандла для продакшена 
+gulp package-solution --ship - создание пакета решения для разворачивания на сервере SharePoint 
 
 
