@@ -1,26 +1,34 @@
 ## BirthdaysWebPart 
 
-This is where you include your WebPart documentation.
+Данный репозиторий представляет собой веб-часть, разработанную для сайта SharePoint, предназначенную для отображения дней рождения сотрудников на текущую дату. Этот README файл содержит информацию о том, как настроить и использовать данную веб-часть.
 
-### Building the code
+### Установка и сборка проекта
 
 ```bash
-git clone the repo
-npm i
-npm i -g gulp
-gulp
+1. Клонируйте репозиторий: 
+git clone https://github.com/ваш_пользователь/BirthdaysWebPart.git
+2. Установите зависимости:
+Перейдите в каталог проекта и выполните команду для установки зависимостей:
+cd BirthdaysWebPart
+npm install
 ```
+
+### Сборка проекта 
+ Выполните следующие команды для сборки проекта:
+npm i -g gulp (установка Gulp, если он еще не установлен)
+gulp (запуск сборки проекта)
 
 This package produces the following:
 
 * lib/* - intermediate-stage commonjs build artifacts
 * dist/* - the bundled script, along with other resources
-* deploy/* - all resources which should be uploaded to a CDN.
+* deploy/* - all resources which should be uploaded to a CD
 
-### Build options
+### Варианты сборки 
+gulp clean - очистка проекта (TODO: добавьте описание)
+gulp test - запуск тестов (TODO: добавьте описание)
+gulp serve - запуск локального сервера (TODO: добавьте описание)
+gulp bundle --ship - создание бандла для продакшена (TODO: добавьте описание)
+gulp package-solution --ship - создание пакета решения для разворачивания на сервере SharePoint (TODO: добавьте описание)
 
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
+
