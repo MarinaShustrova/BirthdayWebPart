@@ -1,0 +1,240 @@
+.birthdays {
+  /* весь контент компонента  */
+}
+
+.container {
+  max-width: 600px;
+  margin: 0px auto;
+  box-shadow: white;
+}
+
+/* отображение фотографии или заглушки*/
+.photoContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.photo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  margin-top: 15px;
+
+
+}
+
+.nameContainer {
+  font-size:21px;
+  display: flex;
+  flex-direction: column;
+  align-items: centr;
+  color: #333333;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 130;
+  margin-top: 20px;
+  word-spacing: 5px;
+
+}
+
+.detailsNameContainer{
+  font-size:15px;
+  color: #333333;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 130;
+  display: flex;
+  flex-direction: column;
+  align-items: centr;
+  margin-top: 10px;
+}
+
+.nameModalContainer {
+  width: 200px;
+  margin-right: 80px;
+  margin-top: 50px;
+  align-items:center;
+}
+
+.nameDetailsContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column ;/* Изменяем направление флекс-контейнера на горизонтальное */
+  font-size:12px;
+  font-weight: 120;
+}
+
+/* заголовок */
+.title {
+  text-align: center;
+  font-size:24px;
+  color: #333333;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  // margin-left: 5px;
+  font-weight:100;
+
+}
+
+.card {
+  background-color: white;
+  width: fit-content;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 7px;
+  border-color: rgb(58, 111, 93);
+  color: #000;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row; /* Изменяем направление флекс-контейнера на горизонтальное */
+  justify-content: space-between;
+}
+
+/* Стили для должности (post), подразделения (division) и места (place) */
+.details {
+  margin-top: 15px;
+  flex-direction: row;
+  flex-direction: row;
+  align-items:centr;
+}
+.post,
+.place {
+  margin-top: 2px; /* замените margin-bottom на margin-top */
+  font-size: 18px; /* добавьте размер шрифта */
+}
+
+.division {
+  margin-bottom: 2px;
+  font-size: 18px; /* добавьте размер шрифта */
+}
+
+
+
+/* Добавляем запятую между элементами */
+.details span:not(:last-child)::after {
+  content: ',';
+  margin-right: 5px;
+}
+
+/* Модальное окно */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  overflow: auto;
+  max-height: 90%;
+}
+
+.modalContent .card {
+  margin-bottom: 20px;
+
+}
+
+.modalContent .photoContainer {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modalContent .photo {
+  width: 175px;
+  height: 175px;
+  margin-bottom: 10px;
+}
+
+.modalContent .nameHeader {
+  margin-right: 0;
+  text-align: center;
+  font-size:21px;
+  color: #333333;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:100;
+}
+
+.modalContent .name {
+  text-align: center;
+  align-items: center;
+  font-size:21px;
+  color: #333333;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:100;
+}
+
+.modalContent .middlename {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 0;
+  font-size:21px;
+  color: #333333;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:100;
+
+}
+
+.modalContent .details {
+  margin-top: 20px;
+  text-align: center;
+ font-size: large;
+ background-color: rgb(251, 253, 254);
+ background-size:cover;
+ border-radius: 10px;
+ background-position: 0px;
+ backdrop-filter: blur(10px);
+
+
+}
+
+.modalContent .details div {
+  backdrop-filter: blur(10px);
+  text-align: center;
+  flex-direction: row;
+justify-content: center;
+font-size:19spx;
+color: #333333;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight:120;
+
+}
+
+.expandButton {
+  color: white;
+  background-color:#1f65bc;
+  padding: 10px 10px;
+  border:blue;
+  cursor: pointer;
+  font-size: 12px;
+  width: 85px;
+  height: 37px;
+}
+
+/* Медиа-запросы */
+@media only screen and (max-width: 600px) {
+  .photo {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+  }
+
+  .modalContent .photo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+}
+

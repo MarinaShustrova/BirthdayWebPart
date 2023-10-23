@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "types": ["node"],
+    "target": "es5",
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "declaration": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "assets/*": ["components/assets/*"]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@microsoft",
+
+    ],
+    "types": [
+      "es6-promise",
+      "webpack-env"
+    ],
+    "lib": [
+      "es5",
+      "dom",
+      "es2015.collection"
+    ]
+  }
+}

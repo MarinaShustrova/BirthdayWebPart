@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "8e4adc27-e9ea-4785-9f55-0539e792a57c",
+  "alias": "BirthdaysWebPart",
+  "componentType": "WebPart",
+
+
+  "version": "*",
+  "manifestVersion": 2,
+
+
+  "requiresCustomScript": false,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "Happy Birthday" },
+    "description": { "default": "Описание" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "Поздравляем с Днем Рождения!",
+      "URL": "https://zup.binnopharmgroup.ru/hrm30/hs/SharePoint/ListBirthdays",
+      "ConnectionType": "2",
+      "defaultImage": "https://o-tendencii.com/uploads/posts/2022-02/1645667191_55-o-tendencii-com-p-tort-s-odnoi-svechkoi-foto-72.jpg",
+      "styleType": "1"
+    }
+  }]
+}
